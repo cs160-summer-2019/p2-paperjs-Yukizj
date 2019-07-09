@@ -70,7 +70,7 @@
           var topLeft = event.downPoint;
           var bottomRight = event.point;
           path.style.fillColor = {
-            gradient: {stops: ['yellow', 'red']},
+            gradient: {stops: [cp.history[cp.history.length - 2], cp.history[cp.history.length - 1]]},
             origin: topLeft,
             destination: bottomRight
           }
